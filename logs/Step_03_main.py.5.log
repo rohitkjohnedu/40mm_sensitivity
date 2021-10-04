@@ -1,0 +1,25 @@
+Welcome to Yade 2021-08-24.git-d2e8416 
+Using python version: 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0]
+Warning: no X rendering available (see https://bbs.archlinux.org/viewtopic.php?id=13189)
+XMLRPC info provider on http://localhost:21000
+TCP python prompt on localhost:9000, auth cookie `caseyu'
+Running script Step_03_main.py
+Traceback (most recent call last):
+  File "/usr/local/bin/yade-2021-08-24.git-d2e8416", line 345, in runScript
+    execfile(script,globals())
+  File "/usr/lib/python3/dist-packages/past/builtins/misc.py", line 87, in execfile
+    exec_(code, myglobals, mylocals)
+  File "Step_03_main.py", line 27, in <module>
+    readParamsFromTable(
+  File "/usr/local/lib/x86_64-linux-gnu/yade-2021-08-24.git-d2e8416/py/yade/utils.py", line 831, in readParamsFromTable
+    if col not in list(kw.keys()) and (not unknownOk): raise NameError("Parameter `%s' has no default value assigned"%col)
+NameError: Parameter `brush_young' has no default value assigned
+
+=================== JOB SUMMARY ================
+id      : ID=24,brush_young=7.00E+06,brush_density=1250,brush_friction=44,dt=1.00E-07,end=500000
+status  : 256 (FAILED)
+duration: 00:00:01
+command : YADE_BATCH=parametric.table:5 DISPLAY=  /usr/local/bin/yade-2021-08-24.git-d2e8416 --threads=1 --nice=10 -x Step_03_main.py> ./logs/Step_03_main.py.5.log 2>&1
+started : Sat Oct  2 15:47:49 2021
+finished: Sat Oct  2 15:47:50 2021
