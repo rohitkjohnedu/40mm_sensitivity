@@ -75,7 +75,7 @@ brush_height = 12.0e-3
 covar        = 0e-7
 clearance    = 1e-5
 # ----------------------------------------------------- target
-target_mass = 55.8e-3
+target_mass = 20.5e-3
 target_side = 0.04
 p_radius    = 1e-3
 
